@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // add URL of  MongoDB database
-const mongoURI = '';
+const mongoURI = 'mongodb+srv://abenedetti27:<Expelliarmus103*>@cluster0.pzwakbl.mongodb.net/';
 
 const connectDB = async () => {
   try {
