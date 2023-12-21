@@ -4,7 +4,7 @@ const seedPostData = require('./postData');
 const seedUserData = require('./userData');
 
 // Replace db url with the actual URL of MongoDB database
-mongoose.connect('your_database_url', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 
