@@ -24,6 +24,13 @@
 
   <main>
     {{{body}}}
+    {{#each comments}}
+  {{> comment-details}}
+{{/each}}
+{{#each blogPosts}}
+  {{> post-details}}
+{{/each}}
+
   </main>
 
   <!-- Add JavaScript here -->
