@@ -1,0 +1,12 @@
+{{! views/dashboard.handlebars }}
+
+<h1>Dashboard</h1>
+
+{{#if blogPosts.length}}
+  {{#each blogPosts}}
+    {{> post-details}}
+    <hr>
+  {{/each}}
+{{else}}
+  <p>No blog posts found. <a href="/dashboard/new">Create a new blog post</a>.</p>
+{{/if}}
