@@ -1,0 +1,13 @@
+{{! views/homepage.handlebars }}
+
+<h1>Welcome to the CMS Blog</h1>
+
+{{#if isAuthenticated}}
+  <p>Hello, {{currentUser.username}}! <a href="/dashboard">Go to Dashboard</a></p>
+{{else}}
+  <p>Explore the latest blog posts:</p>
+  {{#each latestBlogPosts}}
+    {{> post-details}}
+    <hr>
+  {{/each}}
+{{/if}}
