@@ -1,0 +1,19 @@
+{{! views/signup.handlebars }}
+
+<h1>Sign Up</h1>
+
+<form action="/signup" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+{{#if errorMessage}}
+  <p class="error">{{errorMessage}}</p>
+{{/if}}
+
+<p>Already have an account? <a href="/login">Login</a></p>
